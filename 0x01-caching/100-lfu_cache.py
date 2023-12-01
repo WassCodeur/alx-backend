@@ -37,7 +37,6 @@ class LFUCache(BaseCaching):
                     print(f"DISCARD: {lfu_key}")
                     self.counter.pop(lfu_key)
             self.cache_data[key] = item
-            self.counter[key] += 1
 
     def get(self, key):
         """get iten by key
