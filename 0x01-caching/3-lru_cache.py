@@ -33,6 +33,7 @@ class LRUCache(BaseCaching):
                 _key = self.cache_data.popitem()
                 print(f"DISCARD: {_key[0]}")
             self.cache_data[key] = item
+            self.cache_data.move_to_end(key, last=False)
 
     def get(self, key):
         """get iten by key
