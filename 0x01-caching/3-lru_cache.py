@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""lru cache"""
+"""lru cache replacement policy"""
 from collections import OrderedDict
 
 
